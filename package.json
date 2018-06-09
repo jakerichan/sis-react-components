@@ -1,0 +1,54 @@
+{
+  "name": "sis-react-components",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "build": "neutrino build",
+    "start": "neutrino start",
+    "lint": "neutrino lint",
+    "test": "neutrino test"
+  },
+  "files": [
+    "build",
+    "src/lib/**/*.js",
+    "src/hoc/**/*.js"
+  ],
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "peerDependencies": {
+    "@kuali/kuali-ui": ">= ^4.16.0",
+    "react": ">= ^16.2.0",
+    "react-dom": ">= ^16.2.0"
+  },
+  "devDependencies": {
+    "@neutrinojs/airbnb": "^8.2.3",
+    "@neutrinojs/jest": "^8.2.3",
+    "@neutrinojs/react-components": "^8.2.3",
+    "@neutrinojs/standardjs": "^8.2.3",
+    "autoprefixer": "^8.6.0",
+    "babel-plugin-root-import": "^6.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jest-enzyme": "^6.0.1",
+    "neutrino": "^8.2.3",
+    "postcss-loader": "^2.1.5",
+    "postcss-mixins": "^6.2.0",
+    "postcss-preset-env": "^5.1.0",
+    "precss": "^3.1.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "dependencies": {
+    "@kuali/kuali-ui": "^4.16.3",
+    "classnames": "^2.2.6",
+    "debounce": "^1.1.0",
+    "hoist-non-react-statics": "^2.5.3",
+    "ramda": "^0.25.0",
+    "react-animate-height": "^2.0.1",
+    "react-css-component": "^1.0.2"
+  }
+}

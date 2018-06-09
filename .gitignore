@@ -1,0 +1,14 @@
+# Generated and/or Dependencies
+node_modules/
+build/
+log/*.log
+log/*.json
+
+
+# Environment specific
+npm-debug.log
+yarn-error.log
+
+
+# Tools
+.vscode
