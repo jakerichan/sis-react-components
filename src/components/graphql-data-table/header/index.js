@@ -1,8 +1,8 @@
-import R from 'ramda'
+import * as R from 'ramda'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { TableHeader, TableRow, TableColumn } from '@kuali/kuali-ui'
-import composeComponent from '~/lib/compose-component'
+import composeComponent from '~/helpers/compose-component'
 import columnSchema from '../column-schema'
 
 const propTypes = {

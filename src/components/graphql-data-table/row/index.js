@@ -1,9 +1,9 @@
-import R from 'ramda'
+import * as R from 'ramda'
 import React from 'react'
 import PropTypes from 'prop-types'
 import debounce from 'debounce'
 import { TableRow } from '@kuali/kuali-ui'
-import composeComponent from '~/lib/compose-component'
+import composeComponent from '~/helpers/compose-component'
 import getColumnFunctions from './get-column-functions'
 
 const pascalCase = name => name.charAt(0).toUpperCase() + name.substr(1)

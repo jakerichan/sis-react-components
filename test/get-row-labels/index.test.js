@@ -1,6 +1,6 @@
 /* eslint-env jest */
-import R from 'ramda'
-import { getRowLabels, getRowValue } from '../../src/lib/get-row-labels'
+import * as R from 'ramda'
+import { getRowLabels, getRowValue } from '~/helpers/get-row-labels'
 
 describe('get-row-labels', () => {
   let row

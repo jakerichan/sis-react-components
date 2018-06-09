@@ -1,5 +1,5 @@
-import R from 'ramda'
-import { getRowLabels } from '~/lib/get-row-labels'
+import * as R from 'ramda'
+import { getRowLabels } from './get-row-labels'
 
 const getIndexScore = (index, previous) => (index === previous + 1 ? 2 : 1)
 const getFuzzyScore = (searchText, label) => {

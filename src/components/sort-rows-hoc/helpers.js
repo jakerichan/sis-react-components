@@ -1,5 +1,5 @@
-import R from 'ramda'
-import { getRowValue } from '~/lib/get-row-labels'
+import * as R from 'ramda'
+import { getRowValue } from '~/helpers/get-row-labels'
 
 export const getSortFunctionForProperty = (property, sortAscending = true) =>
   R[sortAscending ? 'ascend' : 'descend'](row => getRowValue(row, property))

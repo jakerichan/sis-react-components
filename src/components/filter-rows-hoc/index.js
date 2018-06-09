@@ -1,15 +1,15 @@
-import R from 'ramda'
+import * as R from 'ramda'
 import React from 'react'
 import PropTypes from 'prop-types'
 import hoistNonReactStatics from 'hoist-non-react-statics'
-import Rx from '~/lib/ramda-extensions'
-import TableFilters from '~/components/table-filters'
-import fuzzyFilter from '~/lib/fuzzy-filter'
-import highlightSearch from '~/lib/highlight-search'
+import Rx from '~/helpers/ramda-extensions'
+import fuzzyFilter from '~/helpers/fuzzy-filter'
+import highlightSearch from '~/helpers/highlight-search'
+import TableFilters from '~/table-filters'
 import {
   Filter,
   Field
-} from '@kuali/kuali-ui/lib/filter-editor/prop-types'
+} from '@kuali/kuali-ui/helpers/filter-editor/prop-types'
 
 const NOOP = () => {}
 

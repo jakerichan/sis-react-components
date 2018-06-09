@@ -1,6 +1,6 @@
-import R from 'ramda'
+import * as R from 'ramda'
 import React from 'react'
-import { getRowLabels } from '~/lib/get-row-labels'
+import { getRowLabels } from './get-row-labels'
 
 const getBoldedLabel = (tagGroups, originalValue, id) => {
   return Object.keys(tagGroups).map((start, i, tagGroupKeys) => {

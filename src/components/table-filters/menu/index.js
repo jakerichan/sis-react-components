@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Divider, Menu, RaisedButton } from '@kuali/kuali-ui'
-import composeComponent from '~/lib/compose-component'
+import composeComponent from '~/helpers/compose-component'
 import './index.css'
 
 const propTypes = {

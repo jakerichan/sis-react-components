@@ -1,4 +1,4 @@
-import R from 'ramda'
+import * as R from 'ramda'
 
 const getPropertyKey = (row, property) => {
   const value = typeof property === 'function' ? property(row) : property

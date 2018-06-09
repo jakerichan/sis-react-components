@@ -1,9 +1,9 @@
-import R from 'ramda'
+import * as R from 'ramda'
 import React from 'react'
 import classnames from 'classnames'
 import { TableColumn } from '@kuali/kuali-ui'
 import GraphqlDataTableEditColumn from '../edit-column'
-import { getRowValue } from '~/lib/get-row-labels'
+import { getRowValue } from '~/helpers/get-row-labels'
 
 export default ({ mutate, name }) => {
   const getStringColumn = (row, column, i, getClassname) => {

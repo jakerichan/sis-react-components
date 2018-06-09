@@ -20,11 +20,11 @@ import {
   TableBody,
   TableCardHeader
 } from '@kuali/kuali-ui'
-import getClassname from '~/lib/get-classname'
-import { assocUnlessPropMatchesState } from '~/lib/ramda-extensions'
-import FilterRows from '~/hoc/filter-rows'
-import SortRows from '~/hoc/sort-rows'
-import composeComponent from '~/lib/compose-component'
+import getClassname from '~/helpers/get-classname'
+import { assocUnlessPropMatchesState } from '~/helpers/ramda-extensions'
+import FilterRows from '~/filter-rows-hoc'
+import SortRows from '~/sort-rows-hoc'
+import composeComponent from '~/helpers/compose-component'
 import columnSchema from './column-schema'
 import GraphqlDataTableMessageRow from './message-row'
 import GraphqlDataTableRow from './row'

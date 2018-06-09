@@ -1,10 +1,10 @@
 /* eslint-env jest */
 
 import * as R from 'ramda'
-import * as Rx from '../../src/lib/ramda-extensions'
+import * as Rx from '~/helpers/ramda-extensions'
 import { runTestCases } from '../helpers/define-cases'
 
-describe('/app/lib/ramda-extensions', () => {
+describe('/app/helpers/ramda-extensions', () => {
   describe('assocIf', () => {
     runTestCases(
       ([predicate, propName, value, obj, expected]) => {

@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import getClassname from '../../src/lib/get-classname'
+import getClassname from '~/helpers/get-classname'
 
 describe('getClassname', () => {
   it('returns string', () => {

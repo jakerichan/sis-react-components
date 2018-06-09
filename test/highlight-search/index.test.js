@@ -1,8 +1,8 @@
 /* eslint-env jest */
-import R from 'ramda'
+import * as R from 'ramda'
 import React from 'react'
 import { shallow } from 'enzyme'
-import highlightSearch from '../../src/lib/highlight-search'
+import highlightSearch from '~/helpers/highlight-search'
 
 const searchableProperties = ['label', 'type']
 

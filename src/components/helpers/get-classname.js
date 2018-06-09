@@ -3,9 +3,9 @@
 // Works best when you bind with prefixes specific to that component
 // i.e. this.getClassname = getClassname.bind(this, [ componentName, props.className ])
 
-import R from 'ramda'
-import { renameKeys } from '~/lib/ramda-extensions'
+import * as R from 'ramda'
 import classnames from 'classnames'
+import { renameKeys } from '~/helpers/ramda-extensions'
 
 export default (prefixes = [], tail = '', stateNames = {}) => {
   prefixes = R.uniq(R.reject(R.isEmpty)(prefixes))

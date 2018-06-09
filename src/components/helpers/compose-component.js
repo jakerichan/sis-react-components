@@ -1,4 +1,4 @@
-import R from 'ramda'
+import * as R from 'ramda'
 
 export default (name, ...queries) => {
   return (component, propTypes = {}, defaultProps = {}) => {
@@ -9,7 +9,11 @@ export default (name, ...queries) => {
       component.defaultProps,
       defaultProps
     )
-    const trimmed = R.reject(R.isNil)(queries)
+    const trimmed = R.pipe(
+      R.reject(R.isNil),
+      R.when(R.isEmpty, R.append(R.identity))
+    )(queries)
+
     return R.compose(...trimmed)(component)
   }
 }

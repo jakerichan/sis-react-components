@@ -1,6 +1,6 @@
 /* eslint-env jest */
-import R from 'ramda'
-import fuzzyFilter from '../../src/lib/fuzzy-filter'
+import * as R from 'ramda'
+import fuzzyFilter from '~/helpers/fuzzy-filter'
 
 const searchableProperties = ['label', 'type']
 

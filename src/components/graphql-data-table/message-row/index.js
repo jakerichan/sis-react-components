@@ -1,6 +1,6 @@
 import React from 'react'
 import { TableRow, TableColumn } from '@kuali/kuali-ui'
-import composeComponent from '~/lib/compose-component'
+import composeComponent from '~/helpers/compose-component'
 
 const GraphqlDataTableEmpty = ({ message, columnCount }) => (
   <TableRow>

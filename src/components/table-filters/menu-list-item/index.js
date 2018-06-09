@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Icon, ListItem } from '@kuali/kuali-ui'
-import composeComponent from '~/lib/compose-component'
+import composeComponent from '~/helpers/compose-component'
 
 const propTypes = {
   className: PropTypes.string,

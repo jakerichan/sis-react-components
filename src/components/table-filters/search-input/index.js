@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import composeComponent from '~/lib/compose-component'
-import getClassname from '~/lib/get-classname'
+import composeComponent from '~/helpers/compose-component'
+import getClassname from '~/helpers/get-classname'
 import { RaisedButton, TextField } from '@kuali/kuali-ui'
 import './index.css'
 

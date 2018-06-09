@@ -7,7 +7,7 @@ module.exports = {
       babel: {
         plugins: [
           ['babel-plugin-root-import', [{
-            'rootPathSuffix': 'src'
+            'rootPathSuffix': 'src/components'
           }]]
         ]
       }
@@ -25,12 +25,6 @@ module.exports = {
         .modules
         .add(neutrino.options.source)
     },
-    ['@neutrinojs/jest', {
-      setupTestFrameworkScriptFile: '<rootDir>/jest/test-setup.js',
-      setupFiles: [
-        '<rootDir>/jest/raf-polyfill.js'
-      ]
-    }],
     ['@neutrinojs/style-loader', {
       extract: {
         plugin: {
@@ -53,6 +47,12 @@ module.exports = {
           }
         }
       ]
-    }]
+    }],
+    ['@neutrinojs/jest', {
+      setupTestFrameworkScriptFile: '<rootDir>/jest/test-setup.js',
+      setupFiles: [
+        '<rootDir>/jest/raf-polyfill.js'
+      ]
+    }],
   ]
 }

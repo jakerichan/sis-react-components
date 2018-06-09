@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
-const R = require('ramda')
-const { propOrLazy } = require('../../src/lib/ramda-extensions')
+import * as R from 'ramda'
+import { propOrLazy } from '~/helpers/ramda-extensions'
 
 // caseDefiner :: (a -> void) -> a -> Number -> void
 //
@@ -27,7 +27,7 @@ const { propOrLazy } = require('../../src/lib/ramda-extensions')
 //      ]
 //    )
 //
-const caseDefiner = (assertFn, testCase, index) => {
+export const caseDefiner = (assertFn, testCase, index) => {
   const description = propOrLazy(
     'description',
     () => `case: ${JSON.stringify(testCase)}`,
@@ -57,10 +57,10 @@ const caseDefiner = (assertFn, testCase, index) => {
 //      ]
 //    )
 //
-const runTestCases = (assertFn, testCases) =>
+export const runTestCases = (assertFn, testCases) =>
   R.addIndex(R.forEach)(R.curry(caseDefiner)(assertFn), testCases)
 
-module.exports = {
+export default {
   caseDefiner,
   runTestCases
 }
