@@ -1,0 +1,381 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`highlight search function bold tags are case insensitive ignores lowercase 1`] = `
+<span
+  key="Nibh-Sit-Mattis--0"
+>
+  <strong>
+    Nibh
+  </strong>
+   Sit Mattis
+</span>
+`;
+
+exports[`highlight search function bold tags are case insensitive ignores uppercase 1`] = `
+<span
+  key="Mollis-Purus-Tellus--0"
+>
+  <strong>
+    Mol
+  </strong>
+  lis Purus Tellus
+</span>
+`;
+
+exports[`highlight search function bold tags wrap around any searchable column 1`] = `
+<label>
+  <span
+    key="Tristique-Malesuada-Vehicula--0"
+  >
+    <strong>
+      Tris
+    </strong>
+    tique Malesuada Vehicula
+  </span>
+   - 
+  Dolores
+   - 
+  no tags in here
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around any searchable column 2`] = `
+<label>
+  <span
+    key="Tristique-Malesuada-Vulputate--0"
+  >
+    <strong>
+      Tris
+    </strong>
+    tique Malesuada Vulputate
+  </span>
+   - 
+  Dolores
+   - 
+  no tags in here
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around any searchable column 3`] = `
+<label>
+  Nibh Sit Mattis
+   - 
+  <span
+    key="Ultriciesquia--0"
+  >
+    Ul
+    <strong>
+      tri
+    </strong>
+    cie
+  </span>
+  <span
+    key="Ultriciesquia--1"
+  >
+    <strong>
+      s
+    </strong>
+    quia
+  </span>
+   - 
+  no tags in here
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around any searchable column 4`] = `
+<label>
+  Consectetur Magna Justo
+   - 
+  <span
+    key="Ultriciesquos--0"
+  >
+    Ul
+    <strong>
+      tri
+    </strong>
+    cie
+  </span>
+  <span
+    key="Ultriciesquos--1"
+  >
+    <strong>
+      s
+    </strong>
+    quos
+  </span>
+   - 
+  no tags in here
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around any searchable column 5`] = `
+<label>
+  Lorem Pellentesque Aenean
+   - 
+  <span
+    key="Ultriciesid--0"
+  >
+    Ul
+    <strong>
+      tri
+    </strong>
+    cie
+  </span>
+  <span
+    key="Ultriciesid--1"
+  >
+    <strong>
+      s
+    </strong>
+    id
+  </span>
+   - 
+  no tags in here
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around end of label 1`] = `
+<label>
+  <span
+    key="Consectetur-Magna-Justo--0"
+  >
+    Consectet
+    <strong>
+      u
+    </strong>
+    r Magna Ju
+  </span>
+  <span
+    key="Consectetur-Magna-Justo--1"
+  >
+    <strong>
+      sto
+    </strong>
+  </span>
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around groups of characters 1`] = `
+<label>
+  <span
+    key="Tristique-Malesuada-Vulputate--0"
+  >
+    Tr
+    <strong>
+      ist
+    </strong>
+    ique Male
+  </span>
+  <span
+    key="Tristique-Malesuada-Vulputate--1"
+  >
+    <strong>
+      sua
+    </strong>
+    da Vul
+  </span>
+  <span
+    key="Tristique-Malesuada-Vulputate--2"
+  >
+    <strong>
+      put
+    </strong>
+    ate
+  </span>
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around special characters like colons, parens, and dashes 1`] = `
+<label>
+  <span
+    key="Tue-Mar-13-2018-08:16:43-GMT-0600-(MDT)--0"
+  >
+    Tue Mar 13 2018 08
+    <strong>
+      :
+    </strong>
+    16:43 GMT
+  </span>
+  <span
+    key="Tue-Mar-13-2018-08:16:43-GMT-0600-(MDT)--1"
+  >
+    <strong>
+      -
+    </strong>
+    0600 
+  </span>
+  <span
+    key="Tue-Mar-13-2018-08:16:43-GMT-0600-(MDT)--2"
+  >
+    <strong>
+      (
+    </strong>
+    MDT
+  </span>
+  <span
+    key="Tue-Mar-13-2018-08:16:43-GMT-0600-(MDT)--3"
+  >
+    <strong>
+      )
+    </strong>
+  </span>
+   - 
+  colons-parens-dash
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around special characters like cuss 1`] = `
+<label>
+  <span
+    key="!?/@#\\\\$%^<>&*()=+--0"
+  >
+    <strong>
+      !?/@#\\$%^&lt;&gt;&*()=+
+    </strong>
+  </span>
+   - 
+  whatthecuss
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around special characters like functions in properties 1`] = `
+<label>
+  <span
+    key="deeply-nested-label--0"
+  >
+    <strong>
+      deeply nested
+    </strong>
+     label
+  </span>
+  - 
+  deepnest
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around special characters like functions in value 1`] = `
+<label>
+  <span
+    key="foobar--0"
+  >
+    <strong>
+      foobar
+    </strong>
+  </span>
+   - 
+  function
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around special characters like numbers 1`] = `
+<label>
+  <span
+    key="123456--0"
+  >
+    1234
+    <strong>
+      5
+    </strong>
+    6
+  </span>
+   - 
+  number
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around special characters like quotes 1`] = `
+<label>
+  <span
+    key="O'Crowly-\\"Mac\\"-Donald--0"
+  >
+    O
+    <strong>
+      '
+    </strong>
+    Crowly 
+  </span>
+  <span
+    key="O'Crowly-\\"Mac\\"-Donald--1"
+  >
+    <strong>
+      "
+    </strong>
+    Mac" Donald
+  </span>
+   - 
+  quotes
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around start of label 1`] = `
+<label>
+  <span
+    key="Tristique-Malesuada-Vehicula--0"
+  >
+    <strong>
+      Trist
+    </strong>
+    ique Malesuada Vehicula
+  </span>
+</label>
+`;
+
+exports[`highlight search function bold tags wrap around start of label 2`] = `
+<label>
+  <span
+    key="Tristique-Malesuada-Vulputate--0"
+  >
+    <strong>
+      Trist
+    </strong>
+    ique Malesuada Vulputate
+  </span>
+</label>
+`;
+
+exports[`highlight search function with comma separated search wraps each search part 1`] = `
+<label>
+  <span
+    key="Fall-2018--0"
+  >
+    Fall 
+    <strong>
+      2018
+    </strong>
+  </span>
+   - 
+  <span
+    key="8/23/2018--0"
+  >
+    8/
+    <strong>
+      2
+    </strong>
+    3
+  </span>
+  <span
+    key="8/23/2018--1"
+  >
+    <strong>
+      /2018
+    </strong>
+  </span>
+   - 
+  <span
+    key="12/15/2018--0"
+  >
+    1
+    <strong>
+      2
+    </strong>
+    /15/2
+  </span>
+  <span
+    key="12/15/2018--1"
+  >
+    <strong>
+      018
+    </strong>
+  </span>
+</label>
+`;

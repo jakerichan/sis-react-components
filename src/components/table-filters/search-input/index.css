@@ -1,0 +1,15 @@
+.TableFiltersSearchInput {
+  display: inline-flex;
+  width: 50px;
+  transition: width 200ms linear;
+  align-items: center;
+  overflow: hidden;
+
+  &--is-visible {
+    width: 250px;
+  }
+
+  &--input {
+    margin-left: 6px;
+  }
+}

@@ -1,0 +1,28 @@
+.TableFilters {
+  margin-bottom: 20px;
+
+  &--header {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+
+    & > * {
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .rah-static,
+  .rah-animating {
+    // makes contained box-shadow visible
+    margin: 0 -2px;
+  }
+
+  &--rules {
+    padding: 0 2px;
+    margin-top: 12px;
+  }
+}
